@@ -1,0 +1,42 @@
+# Jekyll Configuration for AI Daily Blog
+title: "AI Daily Insights"
+description: "Daily blog posts about trending topics, powered by AI"
+baseurl: ""
+url: "https://yourusername.github.io"
+author: "AI Blog Assistant"
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+theme: minima
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# Pagination
+paginate: 10
+paginate_path: "/page:num/"
+
+# Collections
+collections:
+  posts:
+    output: true
+    permalink: /:year/:month/:day/:title/
+
+# Default layout for posts
+defaults:
+  - scope:
+      path: "_posts"
+      type: posts
+    values:
+      layout: post
+      author: "AI Blog Assistant"
+
+# Exclude files
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
