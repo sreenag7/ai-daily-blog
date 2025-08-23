@@ -1,8 +1,8 @@
 # Jekyll Configuration for AI Daily Blog
 title: "AI Daily Insights"
 description: "Daily blog posts about trending topics, powered by AI"
-baseurl: ""
-url: "https://yourusername.github.io"
+baseurl: "/ai-daily-blog"
+url: "https://sreenag7.github.io"
 author: "AI Blog Assistant"
 
 # Build settings
